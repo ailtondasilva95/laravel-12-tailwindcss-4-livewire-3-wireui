@@ -16,10 +16,11 @@
 </head>
 
 <body>
-    
+
     {{ $slot }}
 
     <!-- Scripts -->
+    @wireUiScripts
     @vite(['resources/js/app.js'])
 </body>
 

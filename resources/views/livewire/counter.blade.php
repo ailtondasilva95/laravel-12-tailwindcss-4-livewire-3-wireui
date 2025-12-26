@@ -1,7 +1,5 @@
-<div class="flex flex-col items-center justify-center min-h-screen gap-4">
-    <h1 class="text-3xl font-bold underline">{{ $count }}</h1>
-
-    <button wire:click="increment">+</button>
-
-    <button wire:click="decrement">-</button>
+<div class="flex flex-wrap items-center justify-center gap-4 mb-4">
+    <x-button outline light Cyan label="-" wire:click="decrement" />
+    <h1 class="text-3xl font-bold">{{ $count }}</h1>
+    <x-button outline light Cyan label="+" wire:click="increment" />
 </div>
